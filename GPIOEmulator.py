@@ -39,7 +39,7 @@ def setmode(mode) :
     em.log("mode set to " + mode)
 
 def setup(pin, direction) :
-    em.log(emulatorUtils.pinDescription(pin) + " set as " + direction)
+    em.log(em.pinDescription(pin) + " set as " + direction)
 
 class PWMInfo:
     def __init__(self, pin, freq):

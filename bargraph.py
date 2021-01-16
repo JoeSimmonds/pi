@@ -1,5 +1,8 @@
-#import RPi.GPIO as GPIO
-import GPIOEmulator as GPIO
+import sys
+if "emulated" in sys.argv or "EMULATED" in sys.argv :
+	import GPIOEmulator as GPIO
+else :
+	import RPi.GPIO as GPIO
 import time
 import math
 
